@@ -1,0 +1,32 @@
+{
+  "name": "business",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "flexslider": "^2.5.0",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-copy": "^0.8.0",
+    "browserify": "^10.2.6",
+    "browserify-shim": "^3.8.9",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "flexslider": "./node_modules/flexslider/jquery.flexslider.js"
+  },
+  "browserify-shim": "./js/shims.js"
+
+}
