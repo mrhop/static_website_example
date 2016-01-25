@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<div style="width: 601px;height: 535px;border: 2px inset #999;position: relative;" id="scrollDiv">
+    <img style="display: none;" style="width: 100%;display: block;" src="images/scroll1.jpg" />
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.menu_nav > ul > li').mouseover(function(){
+            $('.menu_nav > ul > li >div').show();
+        }).mouseout( function(){
+            $('.menu_nav > ul > li >div').hide();
+        })
+    });
+</script>
+</body>
+</html>

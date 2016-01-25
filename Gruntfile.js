@@ -51,12 +51,20 @@ module.exports = function (grunt) {
                 options: {
                     transform: ["browserify-shim"]
                 }
+            },
+            print:{
+                src: ['js/print/print.js'],
+                dest: 'js/print/print.browserify.js',
+                options: {
+                    transform: ["browserify-shim"]
+                }
             }
         },
             uglify: {
             my_target: {
                 files: {
-                    'js/all.min.js': ['js/all.browserify.js']
+                    'js/all.min.js': ['js/all.browserify.js'],
+                    'js/print/print.browserify.min.js': ['js/print/print.browserify.js']
                 }
             }
         }

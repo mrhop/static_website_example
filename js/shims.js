@@ -3,5 +3,6 @@
  */
 module.exports = {
     jquery: {exports: "jQuery"},
-    flexslider: {exports: null,depends: {jquery: "jQuery"}}
+    flexslider: {exports: null,depends: {jquery: "jQuery"}},
+    jQueryPrint: {exports: null,depends: {jquery: "jQuery"}}
 }
